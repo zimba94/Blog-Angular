@@ -1,0 +1,27 @@
+<!-- <div class="row">
+    <div (click)="abrirEntrada(entrada)" *ngFor="let entrada of entradas" class="card m-5" style="width: 20rem; height: 27rem;" >
+        <img src="/assets/no-image.jpg" class="card-img-top" alt="entrada">
+        <div class="card-body">
+            <h5 class="card-title">{{entrada.titulo}}</h5>
+            <p class="card-text"> {{ entrada.cuerpo | slice:0:100 }}...</p>
+            <div class="d-flex justify-content-end">
+                <button type="button" (click)="editarEntrada(entrada)" class="btn btn-warning mr-2">Edit</button>
+                <button type="button" (click)="borrarEntrada(entrada.id)" class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="row">
+    <div class="col-md-4 col-sm-6 mb-2 animated fadeIn card" *ngFor="let entrada of entradas">
+        <img src="/assets/no-image.jpg" class="img-fluid poster imagen" style="max-width: 98% !important;">
+        <div class="card-body">
+            <h5 class="card-title">{{entrada.titulo}}</h5>
+            <p class="card-text"> {{ entrada.cuerpo | slice:0:100 }}...</p>
+            <div class="d-flex justify-content-end">
+                <button type="button" (click)="editarEntrada(entrada)" class="btn btn-warning mr-2">Edit</button>
+                <button type="button" (click)="borrarEntrada(entrada.id)" class="btn btn-danger">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>

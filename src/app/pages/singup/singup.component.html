@@ -1,0 +1,18 @@
+<form class="login-form" (ngSubmit)="singup()" [formGroup]="form">
+    <p class="login-text">
+      <span class="fa-lg">
+        Registro
+      </span>
+    </p>
+    <input type="text"  formControlName="nombre" class="login-username" autofocus="true" required="true" placeholder="Nombre"/>
+    <input type="email"  formControlName="email" class="login-username" autofocus="true" required="true" placeholder="Email"/>
+    <input type="password"  formControlName="password" class="login-password mb-5" required="true" placeholder="Contraseña" />
+    <input type="submit" name="Login" value="Sing Up" class="login-submit" />
+    <p class="login-text2">
+        o
+    </p>
+    <button type="button" [routerLink]="['/login']" class="login-submit">Return</button>
+</form>
+<a href="#" class="login-forgot-pass">¿Olvidaste tu contraseña?</a>
+<div class="underlay-photo"></div>
+<div class="underlay-black"></div> 

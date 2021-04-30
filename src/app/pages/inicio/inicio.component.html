@@ -1,0 +1,7 @@
+<app-navbar></app-navbar>
+<div>
+    <button (click)="agregar()" class="btn btn-primary ml-3">Nueva +</button>
+</div>
+<div style="margin: 5rem;">
+    <app-entradas [entradas]="entradas" (entradasEvent)="borrarEntrada($event)"></app-entradas>
+</div>

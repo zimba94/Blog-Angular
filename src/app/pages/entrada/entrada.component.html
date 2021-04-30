@@ -1,0 +1,9 @@
+<div class="body-entrada">
+    <h5 class="text-center mb-5">
+        {{slug}}
+    </h5>
+    <div [froalaEditor]="options" [(froalaModel)]="editorContent">Hello, Froala!</div>
+    <div class="d-flex justify-content-end">
+        <button (click)="guardar()" class="btn btn-primary mt-3">Save</button>
+    </div>
+</div>
